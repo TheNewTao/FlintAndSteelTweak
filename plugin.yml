@@ -1,0 +1,5 @@
+name: FlintAndSteelTweak
+version: 2.0
+description: Tweak the mechanics of flint and steel
+author: TheNewTao
+main: me.thenewtao.core.FaSMain
