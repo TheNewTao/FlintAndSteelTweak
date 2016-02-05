@@ -22,7 +22,7 @@ public class InteractEvent implements Listener {
 			if (!e.getPlayer().hasPermission("flintandsteel.bypass")) {
 				if (e.getPlayer() != null && e.getItem().getType() == Material.FLINT_AND_STEEL) {
 					if (e.getClickedBlock() != null && e.getClickedBlock().getType() != Material.AIR
-							&& !main.h.contains(e.getClickedBlock().getType())) {
+							&& !main.getMaterials().contains(e.getClickedBlock().getType())) {
 						String one = ChatColor.YELLOW + "[";
 						String two = ChatColor.GOLD + "!";
 						String three = ChatColor.YELLOW + "]";

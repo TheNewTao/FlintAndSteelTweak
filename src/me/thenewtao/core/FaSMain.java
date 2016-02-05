@@ -10,7 +10,7 @@ import org.bukkit.plugin.java.JavaPlugin;
 import me.thenewtao.events.InteractEvent;
 
 public class FaSMain extends JavaPlugin {
-	public ArrayList<Material> h = new ArrayList<>();
+	private ArrayList<Material> h = new ArrayList<>();
 
 	@Override
 	public void onEnable() {
@@ -39,5 +39,9 @@ public class FaSMain extends JavaPlugin {
 			getConfig().options().copyDefaults(true);
 			saveConfig();
 		}
+	}
+
+	public ArrayList<Material> getMaterials() {
+		return h;
 	}
 }
